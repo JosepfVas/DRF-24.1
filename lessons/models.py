@@ -1,11 +1,17 @@
 from django.db import models
-from courses.models import Courses
-from users.models import NULLABLE
 
 
 class Lessons(models.Model):
     title = models.CharField(max_length=150, verbose_name='название')
     description = models.TextField(verbose_name='описание')
-    image = models.ImageField(upload_to='lessons', **NULLABLE, verbose_name='картинка')
-    video_url = models.URLField(**NULLABLE, verbose_name='ссылка на видео')
-    course = models.ForeignKey(Courses, on_delete=models.CASCADE)
+    image = models.ImageField(upload_to='lessons', null=True, blank=True, verbose_name='картинка')
+    video_url = models.URLField(null=True, blank=True, verbose_name='ссылка на видео')
+    course = models.ForeignKey('courses.Courses', on_delete=models.CASCADE, related_name='lessons')
+
+    def __str__(self):
+        return f'{self.title} {self.description}'
+
+    class Meta:
+        verbose_name = 'урок'
+        verbose_name_plural = 'уроки'
+

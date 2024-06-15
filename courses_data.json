@@ -1,0 +1,38 @@
+[
+{
+  "model": "courses.courses",
+  "pk": 3,
+  "fields": {
+    "title": "Гриффиндор",
+    "description": "добрые челики",
+    "image": ""
+  }
+},
+{
+  "model": "courses.courses",
+  "pk": 4,
+  "fields": {
+    "title": "Слизерин",
+    "description": "злые челики",
+    "image": ""
+  }
+},
+{
+  "model": "courses.courses",
+  "pk": 5,
+  "fields": {
+    "title": "Пуффендуй",
+    "description": "норм челики",
+    "image": ""
+  }
+},
+{
+  "model": "courses.courses",
+  "pk": 6,
+  "fields": {
+    "title": "Когтевран",
+    "description": "непонятные челики",
+    "image": ""
+  }
+}
+]

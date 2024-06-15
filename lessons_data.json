@@ -1,0 +1,79 @@
+[
+{
+  "model": "lessons.lessons",
+  "pk": 4,
+  "fields": {
+    "title": "Заклинания",
+    "description": "варим яды",
+    "image": "",
+    "video_url": null,
+    "course": 4
+  }
+},
+{
+  "model": "lessons.lessons",
+  "pk": 5,
+  "fields": {
+    "title": "Зельеварение",
+    "description": "варим яды",
+    "image": "",
+    "video_url": null,
+    "course": 4
+  }
+},
+{
+  "model": "lessons.lessons",
+  "pk": 6,
+  "fields": {
+    "title": "Защита от Тёмных искусств",
+    "description": "учимся защищатся от скиехэдов",
+    "image": "",
+    "video_url": null,
+    "course": 3
+  }
+},
+{
+  "model": "lessons.lessons",
+  "pk": 7,
+  "fields": {
+    "title": "Полёты на мётлах",
+    "description": "учимся быстро летать от скиехэдов",
+    "image": "",
+    "video_url": null,
+    "course": 3
+  }
+},
+{
+  "model": "lessons.lessons",
+  "pk": 8,
+  "fields": {
+    "title": "Астрономия",
+    "description": "красиво смотрим в небо",
+    "image": "",
+    "video_url": null,
+    "course": 5
+  }
+},
+{
+  "model": "lessons.lessons",
+  "pk": 9,
+  "fields": {
+    "title": "Травология",
+    "description": "ухож за газоном",
+    "image": "",
+    "video_url": null,
+    "course": 6
+  }
+},
+{
+  "model": "lessons.lessons",
+  "pk": 10,
+  "fields": {
+    "title": "Трансфигурация",
+    "description": "трансформируемся",
+    "image": "",
+    "video_url": null,
+    "course": 6
+  }
+}
+]
