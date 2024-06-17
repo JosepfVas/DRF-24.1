@@ -1,0 +1,112 @@
+[
+{
+  "model": "users.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$kjBIGWfJgRhtPodp0stgMW$syp3o5cZiaWTlvk2buzyPEy5BfAWdmdYPl1T5qzT5ng=",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-06-15T13:18:14.522Z",
+    "name": "test",
+    "surname": "testov",
+    "email": "test@testov.com",
+    "phone": null,
+    "city": null,
+    "avatar": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$lMNDSJ0rKKqpsVR76QgCNe$awAvyJcfudzR5tGiuZHn5k5xlnB3+CSUBd9HD8vJ1iM=",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-06-15T13:20:48.526Z",
+    "name": "test1",
+    "surname": "testov1",
+    "email": "test1@testov.com",
+    "phone": null,
+    "city": null,
+    "avatar": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$Yd4tzPrW9D6ageXaAnaDSc$3e2xU61eHeU33FBHzgqx455sboEeqeA9sJT+N0DJnz4=",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-06-15T13:28:20.912Z",
+    "name": "test2",
+    "surname": "testov2",
+    "email": "test2@testov.com",
+    "phone": null,
+    "city": null,
+    "avatar": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$1jDXQ7tNCr90MC6iiYafNU$XrO86ZQpvfZUq8pQ3FDhRDihMBdoooy5Sw2TmRD87WM=",
+    "last_login": "2024-06-17T16:58:32.722Z",
+    "is_superuser": true,
+    "first_name": "",
+    "last_name": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-06-16T10:32:44.439Z",
+    "name": "",
+    "surname": "",
+    "email": "admin@example.com",
+    "phone": null,
+    "city": null,
+    "avatar": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$NDWfdOpQdjLYxvDrsGFlFB$nd5rt0xfHxlzwq+4s73uZL872oPioJzW+pkelUkRYgw=",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-06-16T10:48:54.412Z",
+    "name": "test3",
+    "surname": "testov3",
+    "email": "test3@testov.com",
+    "phone": null,
+    "city": null,
+    "avatar": "",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
