@@ -9,9 +9,9 @@ class User(AbstractUser):
     name = models.CharField(max_length=100, verbose_name='имя')
     surname = models.CharField(max_length=100, verbose_name='фамилия')
     email = models.EmailField(unique=True, verbose_name='email')
-    phone = models.PositiveIntegerField(null=True, blank=True, verbose_name='телефон')
-    city = models.CharField(max_length=100, verbose_name='город')
-    avatar = models.ImageField(upload_to='users', null=True, blank=True, verbose_name='фото')
+    phone = models.PositiveIntegerField(**NULLABLE, verbose_name='телефон')
+    city = models.CharField(max_length=100, **NULLABLE, verbose_name='город')
+    avatar = models.ImageField(upload_to='users', **NULLABLE, verbose_name='фото')
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
