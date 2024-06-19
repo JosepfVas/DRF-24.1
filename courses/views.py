@@ -24,3 +24,12 @@ class CoursesViewSet(viewsets.ModelViewSet):
         elif self.permission_classes == 'destroy':
             self.permission_classes = (IsAuthenticated, ~ModerPermission | IsOwner,)
         return super().get_permissions()
+
+    def get_queryset(self):
+        user = self.request.user
+        if user.groups.filter(name='moders').exists():
+            # Модераторы видят все курсы.
+            return Courses.objects.all()
+        else:
+            # Обычные пользователи видят только свои курсы.
+            return Courses.objects.filter(owner=user)
