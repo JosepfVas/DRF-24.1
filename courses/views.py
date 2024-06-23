@@ -1,5 +1,6 @@
 from rest_framework import viewsets
 from courses.models import Courses
+from courses.paginators import CustomPagination
 from courses.serializers import CoursesSerializer, CoursesDetailSerializer
 from django.shortcuts import get_object_or_404
 from rest_framework.permissions import IsAuthenticated
@@ -10,6 +11,7 @@ from users.permission import ModerPermission, IsOwner
 class CoursesViewSet(viewsets.ModelViewSet):
     serializer_class = CoursesDetailSerializer
     queryset = Courses.objects.all()
+    pagination_class = CustomPagination
 
     def perform_create(self, serializer):
         course = serializer.save()

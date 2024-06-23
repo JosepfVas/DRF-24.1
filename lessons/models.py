@@ -8,7 +8,8 @@ class Lessons(models.Model):
     description = models.TextField(verbose_name='описание')
     image = models.ImageField(upload_to='lessons', null=True, blank=True, verbose_name='картинка')
     video_url = models.URLField(null=True, blank=True, verbose_name='ссылка на видео')
-    course = models.ForeignKey('courses.Courses', on_delete=models.CASCADE, related_name='lessons')
+    course = models.ForeignKey('courses.Courses', on_delete=models.CASCADE, null=True, blank=True,
+                               related_name='lessons')
     owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, blank=True, null=True)
 
     def __str__(self):

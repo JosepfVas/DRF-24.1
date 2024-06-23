@@ -1,8 +1,8 @@
 from rest_framework import generics
 from lessons.models import Lessons
+from lessons.paginators import CustomPagination
 from lessons.serializers import LessonsSerializer
 from rest_framework.permissions import IsAuthenticated
-
 from lessons.permission import ModerPermission, IsOwner
 
 
@@ -20,6 +20,7 @@ class LessonsListAPIView(generics.ListAPIView):
     serializer_class = LessonsSerializer
     queryset = Lessons.objects.all()
     permission_classes = [IsAuthenticated, ModerPermission | IsOwner]
+    pagination_class = CustomPagination
 
     def get_queryset(self):
         user = self.request.user
