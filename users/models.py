@@ -39,11 +39,13 @@ class Payments(models.Model):
                                      verbose_name='оплаченный курс')
     payed_lesson = models.ForeignKey('lessons.Lessons', null=True, blank=True, on_delete=models.CASCADE,
                                      verbose_name='оплаченный урок')
-    value = models.DecimalField(max_digits=10, decimal_places=2, verbose_name='сумма оплаты')
+    amount = models.PositiveIntegerField(blank=True, null=True, verbose_name='сумма оплаты')
     payment_method = models.CharField(max_length=100, choices=PAYMENT_METHOD_CHOICES, verbose_name='способ оплаты')
+    session_id = models.CharField(max_length=400, blank=True, null=True, verbose_name='ID сессии')
+    link = models.URLField(max_length=400, blank=True, null=True, verbose_name='ссылка на оплату')
 
     def __str__(self):
-        return f'{self.user.name} - {self.value}'
+        return f'{self.user.name} - {self.amount}'
 
     class Meta:
         verbose_name = 'платеж'
