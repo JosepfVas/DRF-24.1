@@ -21,6 +21,10 @@ drf-yasg = "^1.21.7"
 setuptools = "^70.1.1"
 stripe = "^10.0.0"
 forex-python = "^1.8"
+celery = "^5.4.0"
+redis = "^5.0.7"
+django-celery-beat = "^2.6.0"
+eventlet = "^0.36.1"
 
 
 [build-system]

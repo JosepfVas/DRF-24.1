@@ -12,6 +12,7 @@ class User(AbstractUser):
     phone = models.PositiveIntegerField(**NULLABLE, verbose_name='телефон')
     city = models.CharField(max_length=100, **NULLABLE, verbose_name='город')
     avatar = models.ImageField(upload_to='users', **NULLABLE, verbose_name='фото')
+    last_login = models.DateTimeField(auto_now_add=True, blank=True, null=True, verbose_name='последний раз в сети')
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
@@ -21,7 +22,7 @@ class User(AbstractUser):
         verbose_name_plural = 'пользователи'
 
     def __str__(self):
-        return f'P{self.email} {self.name} {self.surname} {self.city} {self.phone}'
+        return f'P{self.email} {self.name} {self.surname} {self.city} {self.phone} {self.last_login}'
 
 
 class Payments(models.Model):
